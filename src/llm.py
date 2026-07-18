@@ -12,15 +12,19 @@ client = OpenAI(
 )
 
 
-def ask_llm(prompt: str) -> str:
+def ask_llm(prompt: str, system_prompt: str = "You are a helpful AI assistant.") -> str:
     try:
         response = client.chat.completions.create(
             model=MODEL_NAME,
             messages=[
                 {
+                    "role": "system",
+                    "content": system_prompt,
+                },
+                {
                     "role": "user",
                     "content": prompt,
-                }
+                },
             ],
         )
 
