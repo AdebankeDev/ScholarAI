@@ -90,7 +90,7 @@ ScholarAI/
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ScholarAI.git
+git clone https://github.com/AdebankeDev/ScholarAI.git
 cd ScholarAI
 ```
 
